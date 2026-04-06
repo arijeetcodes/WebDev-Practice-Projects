@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+
+:root {
+  --main-color: #deab5f;
+  --primary-color: #312e2e;
+}
+/* using root we create a function which we can call again and again */
+
+/* Utility Styles */
+button {
+  padding: 10px 30px;
+  /* text padding of 10px top-bottom and 30px left-right */
+  background: var(--main-color);
+  /* background color of set function */
+  border: none;
+  /* no border */
+  cursor: pointer;
+  /* will turn cursor into pointer when hovered */
+}
+
+/* Resets */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* boiler plate of css which sets padding to 0, marrgin to 0 */
+
+body {
+  background: #100e0f;
+}
+/* turns bg color into dark brown */
+
+/* Nav Start */
+nav {
+  display: flex;
+  /* lifts up the elements */
+  justify-content: space-around;
+  /* aligns element in x-axis which space between and around them */
+  align-items: center;
+  /* aligns elements in y-axis center */
+  color: #fff;
+  /* font-color to white */
+  font-family: sans-serif;
+  /* font-family set to sans serif */
+  padding-top: 15px;
+  /* gives a padding of 15px to the top */
+}
+li {
+  display: inline;
+  /* sets the list elements in one line */
+  list-style: none;
+  /* removes the list style (those bullet points */
+}
+li a {
+  color: #fff;
+  /* turns the font color to white */
+  text-decoration: none;
+  /* removes the underline of the list */
+  margin-left: 40px;
+  /* gives a margin of 40px to the left of each element */
+  padding-bottom: 10px;
+  /* gives a padding of 10px to the bottom for any hover effect */
+}
+li a:hover {
+  border-bottom: 2px solid var(--main-color);
+}
+/* Nav End */
+
+/* Header Start */
+.header {
+  background: url(Images/pexels-nao-triponez-129207.jpg);
+  /* gives a background image */
+  background-position: center;
+  /* brings the background image to the center */
+  background-size: cover;
+  /* fits the image to the class area */
+  height: 100vh;
+  /* increases the height of the header class */
+  font-family: "Playfair Display", serif;
+  /* sets the font-family */
+  font-weight: normal;
+  /* sets the font-weight to normal */
+  /* Flexbox */
+  display: flex;
+  /* lifts up the elements */
+  flex-direction: column;
+  /* arranges the elements in one column */
+  justify-content: center;
+  /* brings the elements to the center of the x-axis of the column */
+  align-items: center;
+  /* brings the elements to the center of the y-axis of the column */
+  color: #fff;
+  /* font-colour set to white */
+  position: relative;
+  /* creates an area canvas of the said area */
+  text-align: center;
+  /* aligns the text to the center of the area */
+}
+
+.main-headings {
+  position: absolute;
+  /* lifts up the class element */
+  top: 7rem;
+  /* gives a space of 7rem from the top */
+  font-size: 4rem;
+  /* increases the font-size to 4rem */
+  word-spacing: 10px;
+  /* gives a spaccing of 10px between the words */
+}
+
+.primary-heading {
+  position: absolute;
+  /* lifts up the element */
+  bottom: 4rem;
+  /* gives a space of 4rem from the bottom */
+  font-size: 4rem;
+  /* increases the font-size to 4rem */
+  word-spacing: 10px;
+  /* gives a spacing of 10px between the words */
+  margin-bottom: -40px;
+  /* gives a bottom margin of negative 40px */
+}
+
+.main-btn {
+  position: absolute;
+  /* lifts up the button element */
+  bottom: 2rem;
+  /* gives a space of 2rem from the bottom */
+  padding: 10px 30px;
+  /* gives a padding of 10px top-bottom and 30px left-right */
+  margin-top: 20px;
+  /* gives a margin of 20px to the top */
+  background: transparent;
+  /* makes the background of the button transparent */
+  background: var(--main-color);
+  /* gives it the preset color */
+  transform: translateY(60px);
+  /* moves the button element 60 px downward from its original position */
+}
+
+/* Our Start Start */
+#our-story {
+  /* gives a height of 100vh to the our story page */
+  margin-top: 15%;
+  /* gives a margin of 15% from the top */
+  display: flex;
+  /* lifts up the elements */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img {
+  width: 400px;
+  height: 400px;
+  background: url(Images/pexels-chitokan-2183027-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.title-style {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  color: #fff;
+  transform: translateX(-100px);
+}
+
+.line {
+  width: 100px;
+  height: 2px;
+  background: #fff;
+  transform: translateX(-120px);
+}
+
+.section-content p {
+  max-width: 500px;
+  color: #fff;
+  font-family: sans-serif;
+  line-height: 20px;
+  margin: 20px 0;
+}
+/* Our Story End */
+
+/* Coffee Start */
+.coffee-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* gives space around the elements
+     */
+  align-items: center;
+  margin-top: 10rem;
+  /* gives a margin of 10rem from the top */
+}
+
+.img-2 {
+  width: 400px;
+  height: 400px;
+  /* sets the image wodth and height */
+}
+
+.title-two {
+  font-size: 3rem;
+  /* increases font-size to 3rem */
+  color: #fff;
+  /* changes font-color to white */
+  font-family: "Playfair Display", serif;
+}
+
+.content-section p {
+  max-width: 500px;
+  /* reduces the area width to 500px */
+  margin-top: 20px;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.content-section button {
+  margin-top: 20px;
+}
+/* Coffee Section End */
+
+/* Product Section Start */
+.products {
+  margin-top: 5rem;
+  /* gives a margin of 5rem from the top */
+}
+.title-three {
+  font-size: 4rem;
+  margin-left: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.cards {
+  display: flex;
+  /* aligns the card elements in one line */
+  flex-wrap: wrap;
+  /* spaces for the elements is wrapped */
+  flex-direction: row;
+  /* elements are arranged in a row */
+  justify-content: space-around;
+  /* elements are arranged wrt x-axis with space around them */
+  align-items: center;
+  /* elements are arranged wrt y-axis at the center */
+}
+.card {
+  border: 2px solid var(--main-color);
+  /* gives a border of 2px of color */
+  padding: 0 20px;
+  /* 0px padding top-bottom and 20px padding left-right */
+  height: 400px;
+  /* height of the menu cards */
+  width: 300px;
+  /* width of the menu cards */
+  display: flex;
+  /* internal elements of each card is arranged in one line */
+  flex-direction: column;
+  /* internal elements of each card in arranged in one column */
+  justify-content: space-around;
+  /* intenal elements of each card is arranged wrt x-axis with space around them */
+  align-items: center;
+  /* internal elements of each card is arranged wrt y-axis center */
+  border-radius: 5px;
+  /* smoothening of sharp borders of radius 5px */
+  position: relative;
+  /* creating a canvas for the following elements */
+  margin-bottom: 4rem;
+  /* providing margin of 4rem from the bottom */
+}
+.card-img {
+  width: 100px;
+  height: 100px;
+  /* image frames of 100px width and height */
+  position: absolute;
+  /* lifts the element above the canvas */
+  top: -60px;
+  /* moves -60px from the top */
+}
+.img-one {
+  background: url(Images/3.png);
+  background-position: center;
+  background-size: contain;
+}
+.img-two {
+  background: url(Images/1.png);
+  background-position: center;
+  background-size: contain;
+}
+.img-three {
+  background: url(Images/2.png);
+  background-position: center;
+  background-size: contain;
+}
+.card-title {
+  color: white;
+  /* gives color white */
+  font-family: sans-serif;
+  /* gives font-family */
+  margin-top: 50px;
+  /* gives a margin of 50px from the top */
+}
+.card .items p {
+  color: #fff;
+  /* gives color white */
+  margin: 20px 0;
+  /* gives a margin of 20px top-bottom 0px left-right */
+  font-family: sans-serif;
+  /* gives font-family */
+}
+/* Products End */
+
+/* Footer Start */
+footer {
+  color: #fff;
+  height: 50vh;
+  /* sets the footer area to 50vh */
+  display: flex;
+  /* arranges footer element in one axis */
+  flex-wrap: wrap;
+  /* wraps the elements such that no space remains */
+  align-items: center;
+  /* aligns the elements wrt y-axis center */
+  justify-content: center;
+  /* arranges the elements wrt x-axis cneter */
+  font-family: sans-serif;
+}
+footer .container {
+  margin: 20px;
+  /* gives a margin of 20px for each elements */
+  max-width: 300px;
+  /* sets the individual area of the elements to 300px */
+  text-align: center;
+}
+footer .heading-info {
+  margin-bottom: 20px;
+  /* gives a magin of 20px under the headings of each element */
+}
+footer p {
+  line-height: 25px;
+}
+span {
+  color: var(--main-color);
+}
+/* hr{
+    margin-bottom: 20px;
+    border: var(--main-color);
+    width: 500px;
+    margin: 0 auto;
+} */
+.para {
+  color: #fff;
+  /* gives color white */
+  font-family: sans-serif;
+  /* sets font-family */
+  text-align: center;
+  /* text alignment to the center of the area */
+  margin-top: 20px;
+}
+.para a {
+  color: #fff;
+}
+/* Footer End */
+
+/* Responsiveness */
+@media only screen and (max-width: 768px) {
+  .main-headings,
+  .primary-heading {
+    font-size: 2.5rem;
+    /* decreases the font-size to create responsiveness */
+  }
+  #our-story {
+    text-align: center;
+  }
+  #our-story .title {
+    transform: translateX(50px);
+  }
+  #our-story .line {
+    display: none;
+  }
+  .content-section {
+    text-align: center;
+  }
+  #our-story .img-container {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .coffee-container .img-container {
+    margin-top: 5rem;
+    /* gives a margin of 5rem to the top for the image */
+    width: 50%;
+  }
+  .title {
+    margin: 0 auto;
+  }
+  .title-two {
+    margin: 0 auto;
+  }
+  .title-three {
+    margin: 15% 45%;
+  }
+  .para {
+    display: none;
+  }
+}
