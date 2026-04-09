@@ -1,0 +1,150 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap");
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ebeae9;
+  /* gives background color to the page */
+  margin: 1rem;
+  /* gives a margin of 1rem */
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  /* gives open sans font family to the entire web page */
+}
+
+/* Nav Start */
+nav {
+  display: flex;
+  /* aligns the elements in one axis */
+  justify-content: space-between;
+  /* sets the elements such that there is space between each elements */
+  align-items: center;
+  /* aligns the elements to the center of the y-axis wrt the provided area */
+  color: #fff;
+  /* turns the font color white */
+  padding: 20px;
+  /* gives a padding of 20px around the elements */
+  margin-bottom: 5rem;
+  /* gives a margin of 5rem from the bottom of the elements */
+}
+nav ul {
+  margin-left: 5rem;
+  /* gives a margin of 5rem to the left of the elements of the navbar */
+  list-style: none;
+  /* removes the bullet point of the unordered list */
+}
+li a {
+  text-decoration: none;
+  /* removes the underline of the anchor tag */
+  color: #000;
+  /* turns the font-color black */
+}
+nav .burger {
+  margin-right: 5rem;
+  /* gives a margin of 5rem to the right */
+  cursor: pointer;
+  /* converts the cursor to a pointer when hovered */
+}
+nav .burger span {
+  height: 4px;
+  border: 2px solid black;
+  /* gives a border of 2px black colored */
+  margin: 4px;
+  /* gives a margin of 4px around each element of the span tag */
+  background: #000;
+  /* turns the background color for each element to black */
+}
+/* Nav End */
+
+/* Header Start */
+header {
+  margin: 6rem;
+  /* gives a margin of 6rem to the overall header area */
+}
+.main-headings {
+  width: 50%;
+  /* reduces the width area of the main headig to 50% */
+  font-size: 3rem;
+  /* increases the font-size of the main heading to 3rem */
+  font-weight: 600;
+  /* sets the font weight of the main-heading to 600: semi-bold */
+}
+.gradient-text-1 {
+  background-image: linear-gradient(to right, #ff0000, #ffe100);
+  /* Defining the gradient using background-image */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Clipping the gradient background to the text */
+  color: transparent;
+  /* Making the original text color transparent so that the gradient is visible */
+  -webkit-text-fill-color: transparent;
+  /* Standard fallback for older browsers */
+}
+.gradient-text-2 {
+  background-image: linear-gradient(to right, #44ff00, #00ffee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-text-3 {
+  background-image: linear-gradient(to right, #fb00ff, #0800ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.primary-headings {
+  width: 50%;
+  /* reduces the wdith area of the primary heading to 50% */
+  margin-top: 3rem;
+  /* gives a margin of 3rem to the top of the primary heading area */
+  font-size: 1.5rem;
+  /* increases the font size of the primary heading to 1.5rem */
+  line-height: 30px;
+  /* reduces the line height of the primary headings to 30px */
+}
+.bg-gray {
+  background: rgb(97, 97, 97);
+  /* turns the span areaa color to gray */
+  color: white;
+  /* turns the span font color to white */
+  padding: 2px 10px;
+  /* gives a padding of 2px top-bottom and 10px left-right within the span area */
+  font-weight: bold;
+  /* increases the font-weight of the span text to bold */
+}
+/* Header End */
+
+/* Main Start */
+main {
+  margin: 0 4rem;
+  /* gives a margin of 0rem top-bottom and 4rem left-right for each image area */
+  display: flex;
+  /* aligns all the image areas in one axis */
+  flex-wrap: wrap;
+  /* wraps all the image areas such that no space remains without affecting the image dimensions */
+  justify-content: center;
+  /* aligns the image areas in the center of the x axis */
+  margin: 40px;
+}
+main .img {
+  width: 40%;
+  /* reduces the images to 40% */
+  margin: 10px;
+  /* gives a margin of 10px around each images */
+}
+/* Main End */
+
+/* Section Start */
+
+/* Section End */
