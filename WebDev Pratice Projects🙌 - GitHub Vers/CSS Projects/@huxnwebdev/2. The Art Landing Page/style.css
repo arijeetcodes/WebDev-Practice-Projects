@@ -10,10 +10,14 @@
 }
 
 body {
-  background-color: #ebeae9;
+  background-color: rgb(144, 195, 200);
   /* gives background color to the page */
   margin: 1rem;
   /* gives a margin of 1rem */
+}
+
+.wrapper-container{
+  background-color: #ebeae9
 }
 
 html {
@@ -78,8 +82,70 @@ header {
   font-weight: 600;
   /* sets the font weight of the main-heading to 600: semi-bold */
 }
-.gradient-text-1 {
-  background-image: linear-gradient(to right, #ff0000, #ffe100);
+.gradient-text {
+  background-image: linear-gradient(
+    to right,
+    #ff0000,
+    #ff1900,
+    #ff3300,
+    #ff4d00,
+    #ff6600,
+    #ff8000,
+    #ff9900,
+    #ffb300,
+    #ffcc00,
+    #ffe600,
+    #ffff00,
+    #e6ff00,
+    #ccff00,
+    #b3ff00,
+    #99ff00,
+    #80ff00,
+    #66ff00,
+    #4dff00,
+    #33ff00,
+    #19ff00,
+    #00ff00,
+    #00ff19,
+    #00ff33,
+    #00ff4d,
+    #00ff66,
+    #00ff80,
+    #00ff99,
+    #00ffb3,
+    #00ffcc,
+    #00ffe6,
+    #00ffff,
+    #00e6ff,
+    #00ccff,
+    #00b3ff,
+    #0099ff,
+    #0080ff,
+    #0066ff,
+    #004dff,
+    #0033ff,
+    #0019ff,
+    #0000ff,
+    #1900ff,
+    #3300ff,
+    #4d00ff,
+    #6600ff,
+    #8000ff,
+    #9900ff,
+    #b300ff,
+    #cc00ff,
+    #e600ff,
+    #ff00ff,
+    #ff00e6,
+    #ff00cc,
+    #ff00b3,
+    #ff0099,
+    #ff0080,
+    #ff0066,
+    #ff004d,
+    #ff0033,
+    #ff0019
+  );
   /* Defining the gradient using background-image */
   -webkit-background-clip: text;
   background-clip: text;
@@ -88,20 +154,6 @@ header {
   /* Making the original text color transparent so that the gradient is visible */
   -webkit-text-fill-color: transparent;
   /* Standard fallback for older browsers */
-}
-.gradient-text-2 {
-  background-image: linear-gradient(to right, #44ff00, #00ffee);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-}
-.gradient-text-3 {
-  background-image: linear-gradient(to right, #fb00ff, #0800ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
 }
 .primary-headings {
   width: 50%;
@@ -145,6 +197,118 @@ main .img {
 }
 /* Main End */
 
-/* Section Start */
+/* Section-Three Start */
+.section-three {
+  margin-left: 5rem;
+  /* gives a margin of 5rem to the left of the section */
+}
+.section-three .main-headings {
+  width: 100%;
+}
+.section-three .primary-headings {
+  margin-bottom: 10rem;
+  /* gives a margin of 10rem to the bottom of the para */
+  line-height: 35px;
+}
+.list {
+  display: flex;
+  /* aligns all the list images and heading in one axis */
+  flex-wrap: wrap;
+  /* wraps all the list images and heading such that they fit in the given area and no dimensionality is compromised */
+  justify-content: center;
+  /* aligns all the list images and heading to the center of horizontal-axis */
+  align-items: center;
+  /* aligns all the list images and headings to the center of vertical axis */
+}
+.section-three .item h1 {
+  font-size: 2rem;
+  /* fixes the font-size to 2rem */
+  color: rgb(97, 97, 97);
+}
+.section-three img {
+  width: 400px;
+  height: 500px;
+  /* fixes the image dimension ratio */
+  margin: 50px;
+  /* gives a margin of 50px around each image */
+}
+/* Section-Three End */
 
-/* Section End */
+/* Footer Start */
+footer{
+  margin-top: 10rem;
+  /* gives a margin of 10rem to the top */
+  height: 50vh;
+  /* gives a height of 100vh to the footer section */
+  display: flex;
+  /* aligns the two major div elements in one axis */
+  flex-wrap: wrap;
+  /* wrap the elements such that no compromise on dimensionality and no space between elements */
+  justify-content: space-around;
+  /* aligns the two major div in horizaontal axis such that there is space around them */
+  align-items: center;
+  /* aligns the two major div in the center of the vertical axis */
+  color: white;
+  /* turns font color to white */
+  background: rgb(144, 195, 200);
+}
+footer .logo-container h1{
+  font-size: 4rem;
+  /* increases the font size of the logo text to 4rem */
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 20px;
+  /* gives a margin of 20px to the bottom of the logo text */
+}
+footer .logo-container p{
+  max-width: 400px;
+  /* decreases the width area of p to 400px */
+  font-family: sans-serif;
+  line-height: 25px;
+  /* increases the line height of p to 25px */
+}
+footer .about-company{
+  display: flex;
+  /* aligns the three divs under about-company class in one axis */
+  flex-wrap: wrap;
+  /* wrap the elements such that no compromise on dimensionality and no space between elements */
+  justify-content: center;
+  /* aligns the three divs in the center of the x-axis */
+  align-items: center;
+  /* aligns the three divs in the center of the y-axis */
+}
+footer .about-company .container{
+  margin-right: 40px;
+  /* gives a margin of 40px to the right of the about-company class */
+  margin-top: 20px;
+  /* gives a margin of 20px to the top of the about-company class */
+}
+.about-company .container h1{
+  margin-bottom: 50px;
+  /* gives a margin of 50px to the bottom of about-company headings */
+}
+.about-company .container p{
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+/* Footer End */
+
+/* Responsiveness */
+@media screen and (max-width: 740px){
+  header .main-headings{
+    width: 100%;
+  }
+  header .primary-headings{
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .section-three .main-headings{
+    width: 100%;
+  }
+  .section-three .primary-headings{
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .section-three img{
+    margin: 0;
+  }
+}
