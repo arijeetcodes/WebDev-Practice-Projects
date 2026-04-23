@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+:root{
+    --base-color: white;
+    --base-variant: #e8e9ed;
+    --text-color: #111528;
+    --secondary-text: #232738;
+    --primary-color: #3a435d;
+    --accent-color: #0071ff;
+}
+:root{
+    --base-color: #070b1d;
+    --base-variant: #101425;
+  --text-color: #ffffff;
+  --secondary-text: #a4a5b8;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+*{
+    margin: 0;
+    /* removes any margin from the entire html structure */
+    padding: 0;
+    /* removes all internal padding of the buttons */
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+    /* changes the default font-family to open sans */
+}
